@@ -1,0 +1,49 @@
+
+---
+
+## 📑 Detailed Project Report (for documentation or submission)
+
+```markdown
+# 📑 Detailed Project Report
+
+---
+
+### 🎓 Project Title  
+**"Movie Recommendation System with GUI and MongoDB"**
+
+---
+
+### 👤 Submitted By
+- **Name**: Ishpreet Kukreja  
+- **Tools Used**: Python, Tkinter, MongoDB, DuckDuckGo Search
+
+---
+
+### 📌 Abstract
+
+This project presents a simple yet efficient desktop-based movie recommendation system using Python and MongoDB. It allows users to filter movies by genre and rating, search by title, add or delete movies, and view poster images fetched dynamically using DuckDuckGo Search API. The user interface is built using Tkinter, and the project includes data visualization and user login features.
+
+---
+
+### 💡 Key Features
+
+| Feature                     | Description |
+|-----------------------------|-------------|
+| 🎯 Movie Recommendations     | Filter by genre & rating |
+| 🖼️ Poster Display              | Via DuckDuckGo search |
+| 🔎 Title Search               | Case-insensitive |
+| ➕ Add/Delete Movies           | With input validation |
+| 📤 Export to CSV              | Download results |
+| 📊 Genre Chart                 | Matplotlib graph of genre frequency |
+| 🔐 Login Authentication        | Username-password login
+
+---
+
+### ⚙️ System Architecture
+
+```mermaid
+graph TD
+A[User GUI - Tkinter] --> B[Search, Filter, View Poster]
+B --> C[MongoDB - movie_db]
+C --> D[CRUD Operations]
+B --> E[Poster Search - DuckDuckGo (ddgs)]
